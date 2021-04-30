@@ -1,1 +1,1 @@
-# sistema-moe
+# Sistema de gerenciamento de vagas ofertadas para estagiários
