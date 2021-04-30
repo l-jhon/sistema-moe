@@ -1,0 +1,50 @@
+CRITICAL - 2021-04-30 14:29:48 --> Undefined index: email
+#0 /home/jhonlucas/Documents/Projects/sistema-moe/app/Controllers/Autenticacao.php(119): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->salvarCadastro()
+#2 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/jhonlucas/Documents/Projects/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/jhonlucas...')
+#6 {main}
+CRITICAL - 2021-04-30 14:38:47 --> Undefined variable: dados
+#0 /home/jhonlucas/Documents/Projects/sistema-moe/app/Controllers/Autenticacao.php(131): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->salvarCadastro()
+#2 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/jhonlucas/Documents/Projects/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/jhonlucas...')
+#6 {main}
+CRITICAL - 2021-04-30 15:09:51 -->  route cannot be found while reverse-routing.
+#0 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute()
+#1 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/Common.php(918): CodeIgniter\HTTP\RedirectResponse->route()
+#2 /home/jhonlucas/Documents/Projects/sistema-moe/app/Controllers/Autenticacao.php(148): redirect()
+#3 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->salvarCadastro()
+#4 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/jhonlucas/Documents/Projects/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/jhonlucas...')
+#8 {main}
+CRITICAL - 2021-04-30 15:52:37 --> Undefined property: App\Controllers\Autenticacao::$session
+#0 /home/jhonlucas/Documents/Projects/sistema-moe/app/Controllers/Autenticacao.php(146): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->salvarCadastro()
+#2 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/jhonlucas/Documents/Projects/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/jhonlucas...')
+#6 {main}
+CRITICAL - 2021-04-30 15:53:20 --> Undefined property: App\Controllers\Autenticacao::$session
+#0 /home/jhonlucas/Documents/Projects/sistema-moe/app/Controllers/Autenticacao.php(147): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->salvarCadastro()
+#2 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/jhonlucas/Documents/Projects/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/jhonlucas...')
+#6 {main}
+CRITICAL - 2021-04-30 16:07:48 --> Undefined property: App\Controllers\Autenticacao::$session
+#0 /home/jhonlucas/Documents/Projects/sistema-moe/app/Controllers/Autenticacao.php(147): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->salvarCadastro()
+#2 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#3 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/jhonlucas/Documents/Projects/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/jhonlucas...')
+#6 {main}

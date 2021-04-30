@@ -16,14 +16,7 @@
             <h4>Sistema MOE - Cadastro</h4><hr>
             <form action="<?= base_url('autenticacao/salvarCadastro'); ?>" method="post">
                 <?= csrf_field(); ?>
-                <?php if(!empty(session()->getFlashdata('erro'))) : ?>
-                    <div class="alert alert-danger"><?= session()->getFlashdata('erro'); ?></div>
-                <?php endif ?>
-
-                <?php if(!empty(session()->getFlashdata('sucesso'))) : ?>
-                    <div class="alert alert-success"><?= session()->getFlashdata('sucesso'); ?></div>
-                <?php endif ?>
-                <div class="form-group">
+                <div>
                     <label for="">Email</label>
                     <input type="text" class="form-control" name="email" placeholder="Insira seu email" value="<?= set_value('email'); ?>">
                     <span class="text-danger"><?= isset($validacao) ? display_error($validacao, 'email'): '' ?></span>
