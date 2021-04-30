@@ -392,3 +392,13 @@ CRITICAL - 2021-04-29 20:52:11 --> Unable to connect to the database.
 #10 /home/jhonlucas/Documents/Projects/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
 #11 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/jhonlucas...')
 #12 {main}
+CRITICAL - 2021-04-29 23:24:17 --> There is no data to insert.
+#0 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/BaseModel.php(735): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+#1 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert()
+#2 /home/jhonlucas/Documents/Projects/sistema-moe/app/Controllers/Autenticacao.php(106): CodeIgniter\Model->insert()
+#3 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->salvarCadastro()
+#4 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController()
+#5 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/jhonlucas/Documents/Projects/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 /home/jhonlucas/Documents/Projects/sistema-moe/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/home/jhonlucas...')
+#8 {main}

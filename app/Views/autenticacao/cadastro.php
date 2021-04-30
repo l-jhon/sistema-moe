@@ -15,7 +15,14 @@
         <div class="col-md-4 col-md-offset-4"> 
             <h4>Sistema MOE - Cadastro</h4><hr>
             <form action="<?= base_url('autenticacao/salvarCadastro'); ?>" method="post">
-            <?= csrf_field(); ?>
+                <?= csrf_field(); ?>
+                <?php if(!empty(session()->getFlashdata('erro'))) : ?>
+                    <div class="alert alert-danger"><?= session()->getFlashdata('erro'); ?></div>
+                <?php endif ?>
+
+                <?php if(!empty(session()->getFlashdata('sucesso'))) : ?>
+                    <div class="alert alert-success"><?= session()->getFlashdata('sucesso'); ?></div>
+                <?php endif ?>
                 <div class="form-group">
                     <label for="">Email</label>
                     <input type="text" class="form-control" name="email" placeholder="Insira seu email" value="<?= set_value('email'); ?>">
@@ -31,10 +38,10 @@
                     <input type="password" class="form-control" name="confirma_senha" placeholder="Confirme sua senha" value="<?= set_value('confirma_senha'); ?>">
                     <span class="text-danger"><?= isset($validacao) ? display_error($validacao, 'confirma_senha'): '' ?></span>
                 </div>
-                <select id="tipo_conta" class="form-control" onchange="exibir_ocultar()" value="<?= set_value('tipo_conta'); ?>">
+                <select name="tipo_conta" id="tipo_conta" class="form-control" onchange="exibir_ocultar()">
                     <option selected>Selecione o tipo de conta</option>
-                    <option value="empregador">Empregador</option>
-                    <option value="estagiario">Estagiário</option>
+                    <option value="empregador" <?php set_select('tipo_conta', 'empregador'); ?>>Empregador</option>
+                    <option value="estagiario" <?php set_select('tipo_conta', 'estagiario'); ?>>Estagiário</option>
                 </select>
                 <br>
                 <div class="form-group" id="nome_da_empresa" style='display:none'>
@@ -54,7 +61,7 @@
                 </div>
                 <div class="form-group" id="descricao_da_empresa" style='display:none'>
                     <label for="">Descrição da Empresa</label>
-                    <input type="text" class="form-control" name="descricao_da_empresa" placeholder="Informe a descrição da empresa" value="<?= set_value('descrica_da_empresa'); ?>">
+                    <textarea class="form-control" name="descricao_da_empresa" rows="3" placeholder="Informe a descrição da empresa" value="<?= set_value('descrica_da_empresa'); ?>"></textarea>
                     <span class="text-danger"><?= isset($validacao) ? display_error($validacao, 'descricao_da_empresa'): '' ?></span>
                 </div>
                 <div class="form-group" id="nome" style='display:none'>
@@ -74,7 +81,7 @@
                 </div>
                 <div class="form-group" id="minicurriculo" style='display:none'>
                     <label for="">Minicurrículo</label>
-                    <input type="text" class="form-control required" name="minicurriculo" placeholder="Minicurrículo" value="<?= set_value('minicurriculo'); ?>">
+                    <textarea class="form-control" name="minicurriculo" rows="3" placeholder="Minicurrículo" value="<?= set_value('minicurriculo'); ?>"></textarea>
                     <span class="text-danger"><?= isset($validacao) ? display_error($validacao, 'minicurriculo'): '' ?></span>
                 </div>
                 <br>
