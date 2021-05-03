@@ -3,7 +3,7 @@
 ## Projeto da disciplina Engenharia de Software
 
 Professor: **Cássio Leonardo Rodrigues**<br>
-Alunos: **Edionay e Jhon Lucas**
+Alunos: **Edionay Aguiar e Jhon Lucas**
 
 ### Passo a passo para executar a aplicação
 
