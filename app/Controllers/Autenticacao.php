@@ -23,19 +23,19 @@ class Autenticacao extends BaseController
 
     public function salvarCadastro()
     {
-        $tipo_conta = $this->request->getPost('tipo_conta');
+        $tipoConta = $this->request->getPost('tipo_conta');
 
         // Usuário
         $email = $this->request->getPost('email');
         $senha = $this->request->getPost('senha');
 
-        $dados_usuario = [
+        $dadosUsuario = [
             'email'=>$email,
             'senha'=>$senha
         ];
 
         // Empregador
-        if ($tipo_conta == 'empregador')
+        if ($tipoConta == 'empregador')
         {
             $validacao = $this->validate([
                 'email'=>[
@@ -95,28 +95,28 @@ class Autenticacao extends BaseController
             }
             else
             {   
-                $nome_da_empresa = $this->request->getPost('nome_da_empresa');
-                $endereco_da_empresa = $this->request->getPost('endereco_da_empresa');
-                $nome_da_pessoa_de_contato = $this->request->getPost('nome_da_pessoa_de_contato');
-                $descricao_da_empresa = $this->request->getPost('descricao_da_empresa');
+                $nomeDaEmpresa = $this->request->getPost('nome_da_empresa');
+                $enderecoDaEmpresa = $this->request->getPost('endereco_da_empresa');
+                $nomeDaPessoaDeContato = $this->request->getPost('nome_da_pessoa_de_contato');
+                $descricaoDaEmpresa = $this->request->getPost('descricao_da_empresa');
 
-                $dados_empregador = [
-                    'nome_da_empresa'=>$nome_da_empresa,
-                    'endereco_da_empresa'=>$endereco_da_empresa,
-                    'nome_da_pessoa_de_contato'=>$nome_da_pessoa_de_contato,
-                    'descricao_da_empresa'=>$descricao_da_empresa
+                $dadosEmpregador = [
+                    'nome_da_empresa'=>$nomeDaEmpresa,
+                    'endereco_da_empresa'=>$enderecoDaEmpresa,
+                    'nome_da_pessoa_de_contato'=>$nomeDaPessoaDeContato,
+                    'descricao_da_empresa'=>$descricaoDaEmpresa
                 ];
 
                 $usuarioModel = new \App\Models\UsuarioModel();
-                $dados_empregador['id_usuario'] = $usuarioModel->insert($dados_usuario);
+                $dadosEmpregador['id_usuario'] = $usuarioModel->insert($dadosUsuario);
 
                 $empregadorModel = new \App\Models\EmpregadorModel();
-                $insert = $empregadorModel->insert($dados_empregador);
+                $insert = $empregadorModel->insert($dadosEmpregador);
 
                 $email = \Config\Services::email();
-                $email_empregador=$dados_usuario['email'];
+                $emailEmpregador=$dadosUsuario['email'];
                 $email->setFrom('cadastromoe@gmail.com', 'Sistema MOE');
-                $email->setTo($email_empregador);
+                $email->setTo($emailEmpregador);
 
                 $email->setSubject('Ativação de Conta - Sistema MOE');
                 $email->setMessage("
@@ -126,9 +126,9 @@ class Autenticacao extends BaseController
                         <title></title>
                     </head>
                     <body>
-                        <p>Olá Empregaodr, $dados_empregador[nome_da_empresa]!</p><br>
+                        <p>Olá Empregaodr, $dadosEmpregador[nome_da_empresa]!</p><br>
                         <p>Por favor confirme seu cadasrto no link a seguinte:</p>
-                        <a href='http://localhost/sistema-moe/public/autenticacao/confirmacao/$dados_empregador[id_usuario]'></a>
+                        <a href='http://localhost/sistema-moe/public/autenticacao/confirmacao/$dadosEmpregador[id_usuario]'>Clique aqui!</a>
                         <p>Obrigado e boa sorte!</p>
                         <p>Atenciosamente,</p>
                         <p>Equipe MOE</p>
@@ -136,9 +136,9 @@ class Autenticacao extends BaseController
                 </html>
                 ");
 
-                $envio_do_email = $email->send();
+                $envioDoEmail = $email->send();
 
-                if (!$insert && !$envio_do_email)
+                if (!$insert && !$envioDoEmail)
                 {
                     echo '<script type="text/javascript">'; 
                     echo 'alert("Erro ao realizar o cadastro!");'; 
@@ -223,26 +223,26 @@ class Autenticacao extends BaseController
         
                 $nome = $this->request->getPost('nome');
                 $curso = $this->request->getPost('curso');
-                $ano_de_ingresso = $this->request->getPost('ano_de_ingresso');
+                $anoDeIngresso = $this->request->getPost('ano_de_ingresso');
                 $minicurriculo = $this->request->getPost('minicurriculo');
 
-                $dados_estagiario = [
+                $dadosEstagiario = [
                     'nome'=>$nome,
                     'curso'=>$curso,
-                    'ano_de_ingresso'=>$ano_de_ingresso,
+                    'ano_de_ingresso'=>$anoDeIngresso,
                     'minicurriculo'=>$minicurriculo
                 ];
 
                 $usuarioModel = new \App\Models\UsuarioModel();
-                $dados_estagiario['id_usuario'] = $usuarioModel->insert($dados_usuario);
+                $dadosEstagiario['id_usuario'] = $usuarioModel->insert($dadosUsuario);
 
                 $estagiarioModel = new \App\Models\EstagiarioModel();
-                $insert = $estagiarioModel->insert($dados_estagiario);
+                $insert = $estagiarioModel->insert($dadosEstagiario);
 
                 $email = \Config\Services::email();
-                $email_estagiario=$dados['email'];
+                $emailEstagiario=$dadosUsuario['email'];
                 $email->setFrom('cadastromoe@gmail.com', 'Sistema MOE');
-                $email->setTo($email_estagiario);
+                $email->setTo($emailEstagiario);
 
                 $email->setSubject('Ativação de Conta - Sistema MOE');
                 $email->setMessage("
@@ -252,9 +252,9 @@ class Autenticacao extends BaseController
                         <title></title>
                     </head>
                     <body>
-                        <p>Olá $dados_estagiario[nome]!</p><br>
+                        <p>Olá $dadosEstagiario[nome]!</p><br>
                         <p>Por favor confirme seu cadasrto no link a seguinte:</p>
-                        <a href='http://localhost/sistema-moe/public/autenticacao/confirmacao/$dados_estagiario[id_usuario]'></a>
+                        <a href='http://localhost/sistema-moe/public/autenticacao/confirmacao/$dadosEstagiario[id_usuario]'>Clique aqui!</a>
                         <p>Obrigado e boa sorte!</p>
                         <p>Atenciosamente,</p>
                         <p>Equipe MOE</p>
@@ -262,9 +262,9 @@ class Autenticacao extends BaseController
                 </html>
                 ");
 
-                $envio_do_email = $email->send();
+                $envioDoEmail = $email->send();
 
-                if (!$insert && !$envio_do_email)
+                if (!$insert && !$envioDoEmail)
                 {
                     echo '<script type="text/javascript">'; 
                     echo 'alert("Erro ao realizar o cadastro!");'; 
@@ -285,17 +285,24 @@ class Autenticacao extends BaseController
 
     }
 
-    public function confirmacao($id_usuario)
+    public function confirmacao($idUsuario)
     {
-        $database = $db_connect();
+        $database = \Config\Database::connect();
         
         $status = [
             'status'=>'ativo'
         ];
 
-        $database->table('usuarios')->where('id', $id_usuario)->update($status);
-        $database.close();
-        return redirect('index');
+        $database->table('usuarios')->where('id', $idUsuario)->update($status);
+        $database->close();
+
+        $data = [
+            'message'=>'success'
+        ];
+
+        session()->setFlashdata('successs', 'Cadastro confirmado com sucesso!');
+        return redirect('autenticacao/login');
+        //return view('autenticacao/login', $data);
     }
 
 
@@ -322,11 +329,29 @@ class Autenticacao extends BaseController
 
         if (!$validacao)
         {
-            return view('autenticacao/cadastro', ['validacao'=>$this->validator]);
+            return view('autenticacao/login', ['validacao'=>$this->validator]);
         }
         else
         {
-            echo "Bem vindo ao Sistema MOE";
+            $email = $this->request->getPost('email');
+            $senha = $this->request->getPost('senha');
+
+            $usuarioModel = new \App\Models\UsuarioModel();
+            $dadosUsuario = $usuarioModel->where('email', $email)->first();
+            $hash = password_hash($dadosUsuario['senha'], PASSWORD_DEFAULT);
+            $checkSenha = password_verify($senha, $hash);
+            
+            if($checkSenha && $dadosUsuario['status'] == 'ativo')
+            {
+                return view('autenticacao/bem_vindo');
+            }
+            else
+            {
+                session()->setFlashdata('fail', 'Senha incorreta ou usuário inativo!');
+                return redirect()->to('index')->withInput();
+            }
+
+
         }
     }
 }

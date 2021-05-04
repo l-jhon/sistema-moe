@@ -15,6 +15,12 @@
             <h4>Sistema MOE - Login</h4><hr>
             <form action="<?= base_url('autenticacao/validacaoLogin'); ?>" method="post">
             <?= csrf_field(); ?>
+            <?php if(!empty(session()->getFlashdata('fail'))) : ?>
+                <div class="alert alert-danger"><?= session()->getFlashdata('fail') ?></div>
+            <?php endif ?>
+            <?php if(!empty(session()->getFlashdata('success'))) : ?>
+                <div class="alert alert-danger"><?= session()->getFlashdata('success') ?></div>
+            <?php endif ?>
                 <div class="form-group">
                     <label for="">Email</label>
                     <input type="text" class="form-control" name="email" placeholder="Insira seu email" value="<?= set_value('email'); ?>">
@@ -22,7 +28,7 @@
                 </div>
                 <div class="form-group">
                     <label for="">Senha</label>
-                    <input type="password" class="form-control" name="password" placeholder="Informe sua senha" value="<?= set_value('senha'); ?>">
+                    <input type="password" class="form-control" name="senha" placeholder="Informe sua senha" value="<?= set_value('senha'); ?>">
                     <span class="text-danger"><?= isset($validacao) ? display_error($validacao, 'senha'): '' ?></span>
                 </div>
                 <div class="form-group">

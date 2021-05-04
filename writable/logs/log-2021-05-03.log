@@ -1,2 +1,229 @@
 ERROR - 2021-05-03 20:24:27 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
 ERROR - 2021-05-03 20:26:44 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+CRITICAL - 2021-05-03 20:30:34 --> Invalid file: autenticacao.php
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('autenticacao.ph...')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('autenticacao', Array, true)
+#2 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(325): view('autenticacao', Array)
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->validacaoLogin()
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-03 20:30:42 --> Invalid file: index.php
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('index', Array, true)
+#2 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(325): view('index', Array)
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->validacaoLogin()
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-03 20:30:47 --> Invalid file: index.php
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('index', Array, true)
+#2 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(325): view('index', Array)
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->validacaoLogin()
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-03 20:31:28 --> Invalid file: autenticacao.php
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('autenticacao.ph...')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('autenticacao', Array, true)
+#2 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(325): view('autenticacao', Array)
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->validacaoLogin()
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-03 20:31:52 --> Invalid file: index.php
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('index', Array, true)
+#2 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(325): view('index', Array)
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->validacaoLogin()
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-05-03 20:34:31 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+CRITICAL - 2021-05-03 21:13:04 --> password_hash() expects at least 2 arguments, 1 given
+#0 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(334): password_hash('Teste@123')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->validacaoLogin()
+#2 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-03 21:14:18 --> password_hash(): Argument #2 ($algo) must be a valid password hashing algorithm
+#0 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(334): password_hash('Teste@123', 10)
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->validacaoLogin()
+#2 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-03 21:22:30 --> Undefined variable $check_senha
+#0 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(337): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/opt/lampp/htdo...', 337)
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->validacaoLogin()
+#2 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-05-03 21:23:42 --> mysqli_sql_exception: Column 'ano_de_ingresso' cannot be null in /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:314
+Stack trace:
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `es...')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `es...')
+#2 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `es...')
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `es...', Array, false)
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, true)
+#7 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(240): CodeIgniter\Model->insert(Array)
+#8 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->salvarCadastro()
+#9 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#10 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-05-03 21:23:42 --> Column 'ano_de_ingresso' cannot be null
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(314): mysqli->query('INSERT INTO `es...')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Database/BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `es...')
+#2 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Database/BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `es...')
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `es...', Array, false)
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Model.php(705): CodeIgniter\BaseModel->insert(Array, true)
+#7 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(240): CodeIgniter\Model->insert(Array)
+#8 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->salvarCadastro()
+#9 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#10 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-05-03 21:25:29 --> Undefined variable $dados
+#0 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(243): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/opt/lampp/htdo...', 243)
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->salvarCadastro()
+#2 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-05-03 21:27:45 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+CRITICAL - 2021-05-03 21:32:33 --> Undefined array key "idUsuario"
+#0 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/opt/lampp/htdo...', 131)
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->salvarCadastro()
+#2 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-05-03 21:33:35 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+CRITICAL - 2021-05-03 21:46:44 --> Undefined variable $db_connect
+#0 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/opt/lampp/htdo...', 290)
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->confirmacao('31')
+#2 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-03 21:51:16 --> There is no data to update.
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/BaseModel.php(1682): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/BaseModel.php(864): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Model.php(737): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(297): CodeIgniter\Model->update(Array)
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->confirmacao(Array)
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#6 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-05-03 21:54:18 --> Undefined property: App\Controllers\Autenticacao::$db
+#0 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(295): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/opt/lampp/htdo...', 295)
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->confirmacao('31')
+#2 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-03 22:01:09 --> Call to undefined function App\Controllers\close()
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->confirmacao('31')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#2 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-03 22:02:33 -->  route cannot be found while reverse-routing.
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Common.php(918): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(298): redirect('index')
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->confirmacao('31')
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-03 22:03:22 -->  route cannot be found while reverse-routing.
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Common.php(918): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(298): redirect('index')
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->confirmacao('31')
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-03 22:18:03 --> Invalid file: login.php
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('login', Array, true)
+#2 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(299): view('login')
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->confirmacao('31')
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-03 22:18:16 --> Invalid file: login.php
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('login', Array, true)
+#2 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(299): view('login')
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->confirmacao('index')
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-03 22:18:20 --> Invalid file: login.php
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('login', Array, true)
+#2 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(299): view('login')
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->confirmacao('login')
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-03 22:20:37 --> Call to a member function with() on string
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->confirmacao('31')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#2 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-03 22:22:02 --> view(): Argument #2 ($data) must be of type array, null given, called in /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php on line 299
+#0 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(299): view('autenticacao/lo...', NULL)
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->confirmacao('31')
+#2 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-03 22:29:44 -->  route cannot be found while reverse-routing.
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Common.php(918): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(304): redirect('index')
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->confirmacao('31')
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-03 22:30:18 -->  route cannot be found while reverse-routing.
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Common.php(918): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(304): redirect('autenticacao')
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->confirmacao('31')
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-03 22:30:35 -->  route cannot be found while reverse-routing.
+#0 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/Common.php(918): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/sistema-moe/app/Controllers/Autenticacao.php(304): redirect('autenticacao/lo...')
+#3 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(936): App\Controllers\Autenticacao->confirmacao('31')
+#4 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Autenticacao))
+#5 /opt/lampp/htdocs/sistema-moe/vendor/codeigniter4/framework/system/CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/sistema-moe/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
