@@ -11,16 +11,19 @@
 
 <div class="container">
     <div class="row" style="margin-top:45px">
-        <div class="col-md-4 col-md-offset-4"> 
+        <div class="col-md-4 col-md-offset-4">
             <h4>Sistema MOE - Login</h4><hr>
-            <form action="" method="post">
+            <form action="<?= base_url('autenticacao/validacaoLogin'); ?>" method="post">
+            <?= csrf_field(); ?>
                 <div class="form-group">
                     <label for="">Email</label>
-                    <input type="text" class="form-control" name="email" placeholder="Insira seu email">
+                    <input type="text" class="form-control" name="email" placeholder="Insira seu email" value="<?= set_value('email'); ?>">
+                    <span class="text-danger"><?= isset($validacao) ? display_error($validacao, 'email'): '' ?></span>
                 </div>
                 <div class="form-group">
                     <label for="">Senha</label>
-                    <input type="password" class="form-control" name="password" placeholder="Informe sua senha">
+                    <input type="password" class="form-control" name="password" placeholder="Informe sua senha" value="<?= set_value('senha'); ?>">
+                    <span class="text-danger"><?= isset($validacao) ? display_error($validacao, 'senha'): '' ?></span>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-primay btn-block" type="submit">Entrar</button>

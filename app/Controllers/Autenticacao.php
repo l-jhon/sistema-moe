@@ -128,7 +128,7 @@ class Autenticacao extends BaseController
                     <body>
                         <p>Olá Empregaodr, $dados_empregador[nome_da_empresa]!</p><br>
                         <p>Por favor confirme seu cadasrto no link a seguinte:</p>
-                        <a href='http://localhost:8080/autenticacao/confirmacao/$dados_empregador[id_usuario]'></a>
+                        <a href='http://localhost/sistema-moe/public/autenticacao/confirmacao/$dados_empregador[id_usuario]'></a>
                         <p>Obrigado e boa sorte!</p>
                         <p>Atenciosamente,</p>
                         <p>Equipe MOE</p>
@@ -254,7 +254,7 @@ class Autenticacao extends BaseController
                     <body>
                         <p>Olá $dados_estagiario[nome]!</p><br>
                         <p>Por favor confirme seu cadasrto no link a seguinte:</p>
-                        <a href='http://localhost:8080/autenticacao/confirmacao/$dados_estagiario[id_usuario]'></a>
+                        <a href='http://localhost/sistema-moe/public/autenticacao/confirmacao/$dados_estagiario[id_usuario]'></a>
                         <p>Obrigado e boa sorte!</p>
                         <p>Atenciosamente,</p>
                         <p>Equipe MOE</p>
@@ -296,6 +296,38 @@ class Autenticacao extends BaseController
         $database->table('usuarios')->where('id', $id_usuario)->update($status);
         $database.close();
         return redirect('index');
+    }
+
+
+    public function validacaoLogin()
+    {
+        $validacao = $this->validate([
+            'email' => [
+                'rules' => 'required|valid_email|is_not_unique[usuarios.email]',
+                'errors' => [
+                    'required' => 'O campo email é obrigatório!',
+                    'valid_email' => 'Informe um email válido!',
+                    'is_not_unique' => 'Email não cadastrado!'
+                ]
+            ],
+            'senha'=>[
+                'rules'=>'required|min_length[6]|regex_match[/[A-Z]/]|regex_match[/[0-9]/]|regex_match[/\W/]',
+                'errors'=>[
+                    'required'=>'Informe a senha, campo obrigatório',
+                    'min_length'=>'A senha deve ter no mínímo 6 caracteres',
+                    'regex_match'=>'A senha deve conter pelo menos um número, um caractere maiscúlo e um caractere especial'
+                ]
+            ]
+        ]);
+
+        if (!$validacao)
+        {
+            return view('autenticacao/cadastro', ['validacao'=>$this->validator]);
+        }
+        else
+        {
+            echo "Bem vindo ao Sistema MOE";
+        }
     }
 }
 ?>

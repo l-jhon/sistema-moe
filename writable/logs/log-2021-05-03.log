@@ -1,0 +1,2 @@
+ERROR - 2021-05-03 20:24:27 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
+ERROR - 2021-05-03 20:26:44 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution
